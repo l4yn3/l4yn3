@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://l4yn3.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -80,3 +80,7 @@ theme: maupassant
 deploy:
   type: git
   repo: https://github.com/l4yn3/l4yn3.github.io.git
+
+post_copyright:
+  enable: true
+  author: "l4yn3"
